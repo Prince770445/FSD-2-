@@ -1,12 +1,5 @@
-import Button from '@mui/material/Button';
+import { Button as MuiButton } from '@mui/material';
 
-export default function ButtonBasic() {
-  return (
-    <>
-    <Button size="small" variant='outlined'>Small</Button>
-    <Button size="large" variant='contained'>Large</Button>
-    </>
-    
-  ) 
-
+export default function Button() {
+  return <MuiButton variant="contained">Submit</MuiButton>;
 }
