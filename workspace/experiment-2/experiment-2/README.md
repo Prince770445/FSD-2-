@@ -1,16 +1,55 @@
-# React + Vite
+ Project Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Single Page Application (SPA) developed using React JS.
+The SPA Form is implemented using a component-based architecture, where different sections are rendered dynamically without reloading the page.
 
-Currently, two official plugins are available:
+Components Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+Home Component
+- Acts as the landing section of the SPA
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Displays an introduction to the SPA Form
 
-## Expanding the ESLint configuration
+- First view when the application loads
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+About Component
+
+- Explains the purpose of the SPA Form
+
+- Provides information about the application
+
+- Helps users understand the functionality
+
+Contact Component
+
+- Displays contact details
+
+- Used for user queries and communication
+
+- Provides basic support information
+
+Features
+
+1. Single Page Application behavior
+
+2. No page reload during navigation
+
+3. Modular and reusable components
+
+4. Clean and simple UI
+
+Learning Outcomes
+
+- Understanding the concept of Single Page Application (SPA) in React
+
+- Creating and managing multiple components in a React application
+
+- How to structure a React project using a component-based approach
+
+- Passing and rendering components inside App.js
+
+Result
+
+
+- A fully functional Single Page Application (SPA) was successfully developed using React JS.
