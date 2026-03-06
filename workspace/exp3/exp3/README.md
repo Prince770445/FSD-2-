@@ -1,16 +1,94 @@
-# React + Vite
+# Experiment-3: SPA Routing Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Single Page Application (SPA) built with **React**, **Vite**, and **React Router DOM** to demonstrate modern client-side routing patterns. This project uses Material UI for styling and provides a seamless navigation experience without full page reloads.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ **Client-Side Routing** - Navigate between pages without server requests
+ **Material UI Components** - Modern, responsive UI with MUI
+ **Vite** - Lightning-fast development server with Hot Module Replacement (HMR)
+ **React Router v7** - Latest routing library for dynamic page navigation
+ **Responsive Design** - Mobile-friendly layout components
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── App.jsx              # Main application component
+├── main.jsx             # Entry point
+├── index.css            # Global styles
+├── App.css              # App-specific styles
+└── components/
+    ├── Layout.jsx       # Navigation wrapper/layout
+    ├── Spa.jsx          # Router configuration
+    ├── Home.jsx         # Home page
+    ├── About.jsx        # About page
+    ├── Contact.jsx      # Contact page
+    └── NotFound.jsx     # 404 page
+```
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** v19.2 - UI library
+- **React Router DOM** v7.12 - Client-side routing
+- **Vite** v7.2 - Build tool & dev server
+- **Material UI** v7.3 - Component library
+- **ESLint** - Code linting
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+# Start development server (http://localhost:5173)
+npm run dev
+```
+
+### Build
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm preview
+```
+
+### Linting
+
+```bash
+# Run ESLint
+npm run lint
+```
+
+## Routing Setup
+
+The routing is implemented in the `Spa.jsx` component using React Router DOM's BrowserRouter, Routes, and Route components. Navigation is handled through Link components in the Layout, allowing users to move between:
+
+- **Home** - Landing page
+- **About** - About page
+- **Contact** - Contact page
+- **NotFound** - 404 fallback page for undefined routes
+
+## Key Concepts Demonstrated
+
+- Route configuration with nested routes
+- Link-based navigation
+- Layout/wrapper components for shared UI
+- 404 error handling
+- Browser history management
+
+## ESLint Configuration
+
+This project includes ESLint setup for code quality assurance. The configuration is in `eslint.config.js`.
