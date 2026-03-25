@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Downloads\exp-11\micro-services-lab\customer-service\vir-customer"
+VIRTUAL_ENV="D:\Downloads\FSD-2-\exp-11\micro-services-lab\customer-service\vir-customer"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

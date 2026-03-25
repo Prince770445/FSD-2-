@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Downloads\exp-11\micro-services-lab\customer-service\vir-customer
+set VIRTUAL_ENV=D:\Downloads\FSD-2-\exp-11\micro-services-lab\customer-service\vir-customer
 
 if not defined PROMPT set PROMPT=$P$G
 
