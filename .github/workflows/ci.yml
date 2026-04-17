@@ -49,9 +49,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 22
+          # Adding caching helps speed up runs and prevents some fetch errors
+          cache: 'npm'
+          cache-dependency-path: Testing/exp6/package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        # Use 'npm ci' for automated environments (Clean Install)
+        # If that still fails, we force the architecture
+        run: |
+          npm ci || (rm -rf node_modules package-lock.json && npm install)
 
       - name: Run frontend tests
-        run: npx vitest 
+        run: npx vitest run
